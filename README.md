@@ -1,4 +1,4 @@
-# Lawyer AI — Turkish Criminal Law Assistant
+# AskLaw-RAG — Turkish Criminal Law Assistant
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white)
