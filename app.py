@@ -16,8 +16,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ----------------------- Model ve indeksi bir kez yükle -------------------
-# @st.cache_resource: uygulama yeniden çalışsa da model/index bir kez yüklenir.
 @st.cache_resource(show_spinner="Model ve TCK indeksi yükleniyor (ilk açılış biraz sürer)...")
 def kaynaklari_yukle():
     index = faiss.read_index("tck.faiss")
@@ -47,7 +45,7 @@ KURALLAR:
 """
 
 
-# ------------------------------- RAG mantığı ------------------------------
+# ------------------------------- RAG  ------------------------------
 def getir(soru, k_aday=20, k_madde=5):
     """Soruya en yakın maddeleri getirir (madde + soru vektörleri karışık gelir,
     aynı maddeye birden çok isabet teke indirilir)."""
@@ -126,7 +124,6 @@ def maddeleri_goster(maddeler_listesi):
             st.caption(m["metin"])
 
 
-# Önceki mesajları çiz
 for msg in st.session_state.mesajlar:
     with st.chat_message(msg["rol"]):
         st.markdown(msg["icerik"])
