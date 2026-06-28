@@ -7,7 +7,7 @@
 
 A Retrieval-Augmented Generation (RAG) assistant that answers **everyday-language questions** about the **Turkish Criminal Code** (*Türk Ceza Kanunu* — Law No. 5237). Ask in plain Turkish — *"my neighbor slapped me, what can I do?"* — and get an answer grounded in the actual statute, with the exact articles it relied on.
 
-### 🔗 Live demo: **https://huggingface.co/spaces/borakosalay/lawyer-ai**
+### 🔗 Live demo: **https://huggingface.co/spaces/borakosalay/Ask-Law-RAG**
 ![Demo](demo.png)
 ---
 
